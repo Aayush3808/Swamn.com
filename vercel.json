@@ -1,17 +1,9 @@
+```json
 {
   "buildCommand": "npm run build",
   "devCommand": "npm run dev -- --port 5199",
   "installCommand": "npm install",
   "framework": "tanstack-start",
-  "regions": ["iad1"],
-  "functions": {
-    "api/**/*.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  },
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/" }
-  ]
+  "regions": ["iad1"]
 }
+```
